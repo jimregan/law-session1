@@ -107,13 +107,38 @@
 \begin{frame}
   \frametitle{eXtensible Markup Language}
 
-  \begin{description}
-    \item[Extensible] \hfill \\
-    Capable of being extended\footnote{Wiktionary}
-    \item[Markup Language] \hfill \\
-    a system for annotating a text in a way which is syntactically 
-    distinguishable from that text\footnote{Wikipedia}
-  \end{description}
+  XML is a markup language - a set of rules for adding annotations to text.
+
+  In XML, these are {\tt $<$tags$>$} and {\tt $&$entities$;$}.
+
+\end{frame}
+
+\begin{frame}
+  \frametitle{Entities}
+
+  Entities are used to represent other data.
+
+  Because $<$, $>$, and $&$ are special in XML, to include those characters in XML, entities must be used instead: $&$lt; $&$gt; and $&$amp;
+
+  Other entities are not used in Apertium, so we will not discuss them.
+
+\end{frame}
+
+\begin{frame}
+  \frametitle{Tags /1}
+  Three kinds:
+
+  Opening tags: {\tt $<$tag$>$}
+  Closing tags: {\tt $</$tag$>$}
+  Self-closing (empty) tags: {\tt $<$tag $/>$}
+
+  Tags can contain other tags: {\tt $<$tag$>$ $<$other-tag$>$ $</$other-tag$>$ $</$tag$>$}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Tags /2}
+
+  Tags may have attributes: {\tt $<$tag attribute="value"$>$ $<$/tag$>$
 
 \end{frame}
 
