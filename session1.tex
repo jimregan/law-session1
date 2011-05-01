@@ -120,17 +120,27 @@
 
   Because $<$, $>$, and \& are special in XML, to include those characters in XML, entities must be used instead: \&lt; \&gt; and \&amp;
 
+    \begin{tabular}{ll}
+      $<$ & {\tt \&lt;}
+      $>$ & {\tt \&gt;}
+      \& & {\tt \&amp;}
+    \end{tabular}
+
   Other entities are not used in Apertium, so we will not discuss them.
 
 \end{frame}
 
 \begin{frame}
   \frametitle{Tags /1}
-  Three kinds:
 
-  Opening tags: {\tt $<$tag$>$}
-  Closing tags: {\tt $</$tag$>$}
-  Self-closing (empty) tags: {\tt $<$tag $/>$}
+  \begin{exampleblock}{Three kinds of tags:}
+    \begin{tabular}{ll}
+      Opening tags: & {\tt $<$tag$>$}
+      Closing tags: & {\tt $</$tag$>$}
+      Self-closing (empty) tags: & {\tt $<$tag $/>$}
+    \end{tabular}
+  \end{exampleblock}
+
 
   Tags can contain other tags: {\tt $<$tag$>$ $<$other-tag$>$ $</$other-tag$>$ $</$tag$>$}
 \end{frame}
