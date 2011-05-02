@@ -598,4 +598,22 @@ To compile the dictionary:
 
 \end{frame}
 
+\begin{frame}
+\frametitle{Direction restrictions}
+
+We can annotate entries to apply only in certain directions:
+
+\begin{exampleblock}{Direction restrictions}
+      ~~<e><p><i>dog<s n="n"/></l> \\
+      ~~~~~~~~<r>pies<s n="n"/><s n="ma"/></r><p></e> \\
+      ~~<e r="LR"><p><i>hound<s n="n"/></l> \\
+      ~~~~~~~~<r>pies<s n="n"/><s n="ma"/></r><p></e> \\
+      ~~<e r="RL"><p><i>dog<s n="n"/></l> \\
+      ~~~~~~~~<r>piesek<s n="n"/><s n="ma"/></r><p></e> \\
+\end{exampleblock}
+
+Both {\it dog} and {\it hound} will translate as {\it pies}; both {\it pies} and {\it piesek} will translate as {\it dog}.
+
+\end{frame}
+
 \end{document}
