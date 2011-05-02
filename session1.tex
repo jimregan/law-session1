@@ -576,4 +576,24 @@ To compile the dictionary:
 \end{exampleblock}
 \end{frame}
 
+\section{Direction}
+
+\begin{frame}
+\frametitle{Directions}
+  As you have seen, entries are written in terms of {\it l}eft and {\it r}right;
+  the compiler is invoked with either {\tt lr} (left to right) or {\tt rl} (right to left).
+
+  \begin{tabular}{l|l|l}
+  Dictionary & Direction & Meaning \\
+  \hline
+  Monolingual & lr & Morphological analysis \\
+  Bilingual   & lr & Language 1 to language 2 \\
+   ~ & ~ & English to Polish
+  Monolingual & rl & Morphological generation \\
+  Bilingual   & rl & Language 2 to language 1 \\
+   ~ & ~ & Polish to English
+  \end{tabular}
+
+\end{frame}
+
 \end{document}
