@@ -147,14 +147,14 @@
   \frametitle{Tags /2}
   Tags may have attributes: 
 
-  {\tt $<$tag attribute="value"$>$$<$/tag$>$}
+  {\tt $<$tag attribute="value"$>$ $<$/tag$>$}
 
   Tags can contain other tags: 
 
-  {\tt $<$tag$>$ $<$other-tag$>$ $</$other-tag$>$ $</$tag$>$}
+  {\tt $<$tag$>$ $<$other-tag$>$ $<$/other-tag$>$ $<$/tag$>$}
 
   \begin{alertblock}{Tags must not overlap!}
-    {\tt $<$tag$>$ $<$other-tag$>$ $</$tag$> $</$other-tag$>$$}
+    {\tt $<$tag$>$ $<$other-tag$>$ $<$/tag$> $<$/other-tag$>$}
 
    causes a parse error. 
   \end{alertblock}
