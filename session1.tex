@@ -432,8 +432,66 @@ A lot of duplication.
     \end{footnotesize}
 \end{exampleblock}
 
-A lot of duplication.
+\pause
+Still some duplication.
 \end{frame}
 
+\begin{frame}
+  \frametitle{Using a paradigm}
+
+  \begin{exampleblock}{Examples, using paradigms, take 2}
+    \begin{footnotesize}
+    \begin{alltt}
+      <e><i>cat</i><par n="beer\_\_n"/></e> \\
+      <e><i>beer</i><par n="beer\_\_n"/></e> \\
+      <e><i>dog</i><par n="beer\_\_n"/></e> \\
+    \end{alltt}
+    \end{footnotesize}
+\end{exampleblock}
+
+\end{frame}
+
+\section{Putting it together}
+\begin{frame}
+  \frametitle{A full dictionary}
+
+  \begin{exampleblock}{What a dictionary looks like, take two:}
+    \begin{footnotesize}
+    \begin{alltt}
+      <?xml version="1.0" encoding="UTF-8"?>\\
+      <dictionary>\\
+      ~<alphabet>abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ</alphabet>\\
+      ~<sdefs>\\
+      ~~<sdef n="n" c="noun"/>\\
+      ~~<sdef n="sg" c="singular"/>\\
+      ~~<sdef n="pl" c="plural"/>\\
+      ~</sdefs>\\
+      ~<pardefs>\\
+      ~~<pardef n="house\_\_n">\\
+      ~~~<e> \\
+      ~~~~<p> \\
+      ~~~~~<l></l> \\
+      ~~~~~<r><s n="n"/><s n="sg"/></r> \\
+      ~~~~</p> \\
+      ~~~</e> \\
+      ~~~<e> \\
+      ~~~~<p> \\
+      ~~~~~<l>s</l> \\
+      ~~~~~<r><s n="n"/><s n="pl"/></r> \\
+      ~~~~</p> \\
+      ~~~</e> \\
+      ~~</pardef>\\
+      ~</pardefs>\\
+      ~<section id="id" type="standard">\\
+      ~~<e><i>cat</i><par n="beer\_\_n"/></e> \\
+      ~~<e><i>beer</i><par n="beer\_\_n"/></e> \\
+      ~~<e><i>dog</i><par n="beer\_\_n"/></e> \\
+      ~</section>\\
+      </dictionary>\\
+    \end{alltt}
+    \end{footnotesize}
+\end{exampleblock}
+
+\end{frame}
 
 \end{document}
