@@ -3,7 +3,7 @@
 
 \setbeamercolor{frametitle}{fg=lightred,bg=darkred}
 \setbeamercolor{title}{fg=lightred,bg=darkred}
-\usepackage[spanish,english]{babel}
+\usepackage[spanish,english,greek]{babel}
 \usepackage{ucs}
 \usepackage{times}
 \usepackage[T1]{fontenc}
@@ -261,6 +261,23 @@
 
   The {\tt id} attribute should be self-explanatory; each section must 
   also have a tokenisation {\tt type} (usually {\tt standard}). 
+
+\end{frame}
+
+\section{Entries}
+
+\begin{frame}
+  \frametitle{A simple entry}
+
+  \begin{exampleblock}{Simple entries:}
+    \begin{footnotesize}
+    \begin{alltt}
+      <e><p><l>beer</l><r>beer<s n="n"/><s n="sg"/></r></p></e>
+      <e><p><l>beers</l><r>beer<s n="n"/><s n="pl"/></r></p></e>
+    \end{alltt}
+    \end{footnotesize}
+\end{exampleblock}
+
 
 \end{frame}
 
