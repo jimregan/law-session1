@@ -169,7 +169,7 @@
     \begin{itemize}
     \item Morphological analysis/generation
     \item Bilingual lexicon
-    \item Orthographic operations
+    \item Orthographic operations (post-generation)
     \end{itemize}
   \end{block}
 
@@ -209,6 +209,49 @@
   {\tt $<$alphabet$>$} is a slightly misleading name, but
   {\tt $<$characters-to-use-when-tokenising$>$} would be 
   difficult to remember.
+
+  {\tt $<$alphabet$>$} must be present, but may be empty.
+\end{frame}
+
+\begin{frame}
+  \frametitle{sdefs}
+
+  {\tt $<$sdefs$>$} contains the definitions of symbols used
+  in the dictionary.
+
+  {\tt $<$sdefs$>$} may be absent (symbols are not used
+  in post generation).
+\end{frame}
+
+\begin{frame}
+  \frametitle{sdef}
+
+  Each {\tt $<$sdef$>$} defines a symbols.
+
+  The {\tt n} attribute contains the {\it n}ame of the symbol.
+
+  The (optional) {\tt c} attribute contains a {\it c}omment.
+
+\end{frame}
+
+\begin{frame}
+  \frametitle{pardefs}
+
+  {\tt $<$pardefs$>$} defines the set of paradigms.
+
+\end{frame}
+
+\begin{frame}
+  \frametitle{pardef}
+
+  Each {\tt $<$pardef$>$} defines a paradigm.
+
+  The {\tt n} attribute contains the {\tt n}ame.
+
+  \pause
+
+  More about paradigms later.
+
 \end{frame}
 
 \end{document}
